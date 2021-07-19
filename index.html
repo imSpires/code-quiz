@@ -8,24 +8,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">  
-    <title>Document</title>
+    <title>Code Quiz!</title>
 </head>
+
 <body>
-    <div class="container">
-        <div id="question-container" class="hide">
-            <div id="question">Question</div>
-            <div id="answer-buttons" class="btn-grid">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
-            </div>
+
+    <div id="nav">
+        <!-- view highscore -->
+        <div class="left">
+            <a onclick="getScore()" href="#"><h4 >View Highscore</h4></a>
         </div>
-        <div class="controls">
-            <button id="start-btn" class="start-btn btn">Start</button>
-            <button id="next-btn" class="next-btn btn hide">Next</button>
+        <!-- timer -->
+        <div class="right">
+            <h4>Time: <span id="timeLeft">0</span></h4>
         </div>
     </div>
+
+    <!-- Main quiz container -->
+    <div id="quiz-container">
+        <div id="quiz-body">      
+            <h1>Code Quiz!</h1>
+            <h3> How well do you know JavaScript?! Click start to play, keep in mind you will be penalized for wrong answers!</h3>
+            <button onclick="start()">Start!</button>
+        </div>
+    </div>
+
+    <!-- JS -->
     <script src="./assets/script.js"></script>
 </body>
+
 </html>
