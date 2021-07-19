@@ -14,4 +14,4 @@ https://imSpires.github.io/code-quiz
 ## Contribution
 Made by [imSpires]
 
-![Screenshot](assets/screenshot.pdf?raw=true)
+![Screenshot](assets/images/screenshot.pdf?raw=true)
